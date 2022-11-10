@@ -1,12 +1,13 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Oswald } from '@next/font/google';
+import { Inter } from '@next/font/google';
 
-const oswald = Oswald();
+const inter = Inter();
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<main className={oswald.className}>
+		<main className={inter.className}>
+			{/* <main> */}
 			<Component {...pageProps} />
 		</main>
 	);
