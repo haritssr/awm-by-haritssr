@@ -8,7 +8,7 @@ export default function Navigation() {
 	const [open, setOpen] = useState<boolean>(false);
 	const router = useRouter();
 	let thisPage;
-	if (router.asPath === '/') {
+	if (router.asPath === '/' || router.asPath.startsWith('#', 1)) {
 		thisPage = 'Beranda';
 	} else {
 		const a = router.asPath.slice(1).split('-');
