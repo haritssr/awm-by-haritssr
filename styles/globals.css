@@ -33,5 +33,6 @@ a {
 }
 
 html {
+	-webkit-tap-highlight-color: transparent;
 	scroll-padding-top: 100px;
 }
